@@ -10,7 +10,7 @@ CI/CD: **GitHub Actions** builds and pushes a Docker image to GHCR on every push
 
 ```bash
 # Build and run locally
-docker compose up --build
+docker compose -f docker-compose.dev.yml up -d --build
 
 # Open http://localhost in your browser
 ```

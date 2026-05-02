@@ -57,7 +57,7 @@ const BRAND_LOGOS = {
 
   // ── Education ──────────────────────────────────────────────────────
   'chulalongkorn': {
-    logoUrl: null,          // ← paste logo URL here when available
+    logoUrl: 'logoes/CU-logo.svg', // ← local file from src/logoes/
     initials: 'CU',
     bg: 'linear-gradient(135deg, #6b1231, #a01848)',
   },

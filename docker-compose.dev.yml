@@ -1,0 +1,23 @@
+name: portfolio-dev
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: portfolio:dev
+    container_name: portfolio-dev
+    restart: "no"
+    ports:
+      - "8080:80"       # Access at http://localhost:8080 — avoids conflicts with port 80
+    volumes:
+      # Use dev-only Nginx config (HTTP only, no SSL certs required)
+      - ./nginx.dev.conf:/etc/nginx/nginx.conf:ro
+      # Live-reload: changes to src/ are reflected immediately without rebuilding
+      - ./src:/usr/share/nginx/html:ro
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 5s

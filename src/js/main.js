@@ -1,4 +1,97 @@
 /* ==============================================
+   Brand Logo Configuration
+   =====================================
+   ONE place to manage all logos/avatars.
+
+   logoUrl options:
+     - Simple Icons CDN: 'https://cdn.simpleicons.org/<slug>/ffffff'
+     - Any public image URL (PNG, SVG, WebP)
+     - Local file:        'images/my-logo.png'
+     - null               → shows letter initials with gradient bg
+   ============================================== */
+const BRAND_LOGOS = {
+
+  // ── Companies ──────────────────────────────────────────────────────
+  'the-gang-tech': {
+    logoUrl: null,          // ← paste logo URL here when available
+    initials: 'TG',
+    bg: 'linear-gradient(135deg, #1a3a6e, #2d5aa0)',
+  },
+  'kiatnakin-phatra': {
+    logoUrl: null,          // ← paste logo URL here when available
+    initials: 'KK',
+    bg: 'linear-gradient(135deg, #7d1d1d, #b53030)',
+  },
+  'softnix': {
+    logoUrl: null,          // ← paste logo URL here when available
+    initials: 'SN',
+    bg: 'linear-gradient(135deg, #145a32, #1e8449)',
+  },
+  'ford': {
+    logoUrl: 'https://cdn.simpleicons.org/ford/ffffff',
+    initials: 'F',
+    bg: '#003399',
+  },
+
+  // ── Certifications ─────────────────────────────────────────────────
+  'cert-ai-cloud': {
+    logoUrl: 'https://cdn.simpleicons.org/microsoftazure/ffffff',
+    initials: 'AI',
+    bg: 'linear-gradient(135deg, #005ba1, #0078d4)',
+  },
+  'cert-arduino': {
+    logoUrl: 'https://cdn.simpleicons.org/arduino/ffffff',
+    initials: 'AR',
+    bg: 'linear-gradient(135deg, #006e74, #00979d)',
+  },
+  'cert-raspberry-pi': {
+    logoUrl: 'https://cdn.simpleicons.org/raspberrypi/ffffff',
+    initials: 'PI',
+    bg: 'linear-gradient(135deg, #8b1232, #c51a4a)',
+  },
+  'cert-python': {
+    logoUrl: 'https://cdn.simpleicons.org/udemy/ffffff',
+    initials: 'PY',
+    bg: 'linear-gradient(135deg, #6b21a8, #a435f0)',
+  },
+
+  // ── Education ──────────────────────────────────────────────────────
+  'chulalongkorn': {
+    logoUrl: null,          // ← paste logo URL here when available
+    initials: 'CU',
+    bg: 'linear-gradient(135deg, #6b1231, #a01848)',
+  },
+  'triam-udom': {
+    logoUrl: null,          // ← paste logo URL here when available
+    initials: 'TU',
+    bg: 'linear-gradient(135deg, #1a3a6e, #2d5aa0)',
+  },
+};
+
+function _brandFallback(el, config) {
+  el.style.background = config.bg;
+  el.textContent = config.initials;
+}
+
+function renderBrandSlots() {
+  document.querySelectorAll('[data-brand]').forEach((el) => {
+    const config = BRAND_LOGOS[el.dataset.brand];
+    if (!config) return;
+    if (config.logoUrl) {
+      const img = document.createElement('img');
+      img.src = config.logoUrl;
+      img.alt = '';
+      img.className = 'brand-icon';
+      img.loading = 'lazy';
+      img.onerror = () => { el.innerHTML = ''; _brandFallback(el, config); };
+      el.appendChild(img);
+    } else {
+      _brandFallback(el, config);
+    }
+  });
+}
+
+/* ==============================================
    Typing Effect
    ============================================== */
 const TITLES = [
@@ -139,4 +232,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Init scroll reveal
   initReveal();
+
+  // Render brand logos / letter avatars
+  renderBrandSlots();
 });

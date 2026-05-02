@@ -92,6 +92,8 @@ jobs:
               --name portfolio \
               --restart unless-stopped \
               -p 80:80 \
+              -p 443:443 \
+              -v /etc/letsencrypt:/etc/letsencrypt:ro \
               "$IMAGE_REF"
 
             # Remove dangling images to save disk space

@@ -10,8 +10,8 @@ COPY nginx.conf /etc/nginx/nginx.conf
 # Copy static portfolio files
 COPY src/ /usr/share/nginx/html/
 
-# Nginx runs on port 80
-EXPOSE 80
+# Nginx runs on ports 80 (HTTP redirect) and 443 (HTTPS)
+EXPOSE 80 443
 
 # Validate config then start Nginx in foreground
 CMD ["nginx", "-g", "daemon off;"]

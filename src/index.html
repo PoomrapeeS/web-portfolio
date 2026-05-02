@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Poomrapee Sareekachoncharu – Data Engineer & Analyst based in Bangkok, Thailand. Specializing in ETL pipelines, Azure Data Platform, and big data solutions."
+    />
+    <meta
+      name="keywords"
+      content="Data Engineer, Data Analyst, ETL, Azure, Airflow, Python, SQL, Bangkok, Thailand"
+    />
+    <meta property="og:title" content="Poomrapee Sareekachoncharu | Data Engineer & Analyst" />
+    <meta
+      property="og:description"
+      content="Data Engineer & Analyst specializing in ETL pipelines, Azure Data Platform, and big data solutions."
+    />
+    <meta property="og:url" content="https://poomdev.me" />
+    <meta property="og:type" content="website" />
+    <title>Poomrapee Sareekachoncharu | Data Engineer & Analyst</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ============================
+         Navigation
+         ============================ -->
+    <nav id="navbar" data-testid="navbar">
+      <div class="nav-container">
+        <a href="#hero" class="nav-logo" data-testid="nav-logo">Poom<span class="accent">.</span></a>
+        <button class="nav-toggle" data-testid="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links" data-testid="nav-links">
+          <li><a href="#about" class="nav-link" data-testid="nav-link-about">About</a></li>
+          <li><a href="#experience" class="nav-link" data-testid="nav-link-experience">Experience</a></li>
+          <li><a href="#skills" class="nav-link" data-testid="nav-link-skills">Skills</a></li>
+          <li><a href="#certifications" class="nav-link" data-testid="nav-link-certs">Certs</a></li>
+          <li><a href="#education" class="nav-link" data-testid="nav-link-education">Education</a></li>
+          <li><a href="#contact" class="nav-link nav-cta" data-testid="nav-link-contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ============================
+         Hero
+         ============================ -->
+    <section id="hero" data-testid="hero-section">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="hero-greeting" data-testid="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name" data-testid="hero-name">
+          Poomrapee <span class="accent">Sareekachoncharu</span>
+        </h1>
+        <p class="hero-title" data-testid="hero-title">
+          <span class="typed-text" aria-live="polite"></span><span class="cursor" aria-hidden="true">|</span>
+        </p>
+        <p class="hero-location" data-testid="hero-location">
+          <i class="fas fa-map-marker-alt" aria-hidden="true"></i> Bangkok, Thailand
+        </p>
+        <div class="hero-cta" data-testid="hero-cta">
+          <a href="#contact" class="btn btn-primary" data-testid="hero-contact-btn">Get In Touch</a>
+          <a
+            href="https://www.linkedin.com/in/poomrapee-sareekachoncharu-198b03253/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline"
+            data-testid="hero-linkedin-btn"
+          >
+            <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn
+          </a>
+        </div>
+        <div class="hero-scroll" data-testid="hero-scroll-indicator">
+          <a href="#about" aria-label="Scroll to About section">
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================
+         About
+         ============================ -->
+    <section id="about" data-testid="about-section">
+      <div class="container">
+        <h2 class="section-title" data-testid="about-title">About <span class="accent">Me</span></h2>
+        <div class="about-grid">
+          <div class="about-text" data-testid="about-text">
+            <p>
+              Hi, I'm <strong>Poom</strong> — a passionate Data Engineer and Analyst based in Bangkok, Thailand.
+              I specialize in building robust data pipelines, transforming raw data into actionable insights,
+              and architecting scalable solutions on the Azure Data Platform.
+            </p>
+            <p>
+              With experience across ETL development, big data processing, and full-stack data platform
+              engineering, I've helped financial institutions and tech companies move from raw data to
+              reliable, governed data products. My background in Mechanical Engineering gives me a unique
+              analytical and systems-thinking perspective.
+            </p>
+            <p>
+              When I'm not building pipelines, I enjoy exploring new technologies, contributing to
+              open-source platforms, and continuously growing through certifications and side projects.
+            </p>
+            <a
+              href="mailto:poomrapee.s@outlook.co.th"
+              class="btn btn-primary"
+              data-testid="about-email-btn"
+            >
+              <i class="fas fa-envelope" aria-hidden="true"></i> poomrapee.s@outlook.co.th
+            </a>
+          </div>
+          <div class="about-stats" data-testid="about-stats">
+            <div class="stat-card" data-testid="stat-years-experience">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-card" data-testid="stat-companies">
+              <span class="stat-number">4</span>
+              <span class="stat-label">Companies</span>
+            </div>
+            <div class="stat-card" data-testid="stat-certifications">
+              <span class="stat-number">4</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat-card" data-testid="stat-technologies">
+              <span class="stat-number">15+</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================
+         Experience
+         ============================ -->
+    <section id="experience" data-testid="experience-section">
+      <div class="container">
+        <h2 class="section-title" data-testid="experience-title">
+          Work <span class="accent">Experience</span>
+        </h2>
+        <div class="timeline" data-testid="experience-timeline">
+
+          <!-- The Gang Technology -->
+          <div class="timeline-item" data-testid="experience-item-0">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Data Analyst</h3>
+                  <p class="timeline-company">
+                    <i class="fas fa-building" aria-hidden="true"></i> The Gang Technology Co., Ltd.
+                  </p>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-date">
+                    <i class="far fa-calendar-alt" aria-hidden="true"></i> Jul 2025 – Present
+                  </span>
+                  <span class="timeline-location">
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i> Bangkok, Thailand
+                  </span>
+                  <span class="timeline-badge current">Current</span>
+                </div>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Analyze business data to support decision-making and strategic planning.</li>
+                <li>Build dashboards and reports for stakeholder consumption and performance tracking.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Kiatnakin Phatra -->
+          <div class="timeline-item" data-testid="experience-item-1">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">ETL Developer</h3>
+                  <p class="timeline-company">
+                    <i class="fas fa-building" aria-hidden="true"></i> Kiatnakin Phatra Financial Group
+                  </p>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-date">
+                    <i class="far fa-calendar-alt" aria-hidden="true"></i> Aug 2024 – Jul 2025
+                  </span>
+                  <span class="timeline-location">
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i> Bangkok, Thailand
+                  </span>
+                </div>
+              </div>
+              <ul class="timeline-bullets">
+                <li>
+                  Built big data pipelines handling various input data types using
+                  <strong>Azure Data Factory</strong>, transforming data for consumption across each
+                  layer of <strong>Azure Data Lake Gen2</strong>.
+                </li>
+                <li>
+                  Created complex <strong>PL/SQL</strong> and <strong>SQL</strong> queries in
+                  <strong>Oracle</strong> to support the internal National Credit Bureau System.
+                </li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Azure Data Factory</span>
+                <span class="tag">Azure Synapse Analytics</span>
+                <span class="tag">Azure Databricks</span>
+                <span class="tag">ADLS Gen2</span>
+                <span class="tag">Delta Lake</span>
+                <span class="tag">Parquet</span>
+                <span class="tag">Oracle</span>
+                <span class="tag">PL/SQL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Softnix ETL -->
+          <div class="timeline-item" data-testid="experience-item-2">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">ETL Developer</h3>
+                  <p class="timeline-company">
+                    <i class="fas fa-building" aria-hidden="true"></i> Softnix Technology
+                  </p>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-date">
+                    <i class="far fa-calendar-alt" aria-hidden="true"></i> May 2024 – Jul 2024
+                  </span>
+                  <span class="timeline-location">
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i> Bangkok, Thailand
+                  </span>
+                </div>
+              </div>
+              <ul class="timeline-bullets">
+                <li>
+                  Used <strong>Apache Airflow</strong> to manage data pipelines extracting from multiple
+                  sources including files (.docx, .pdf) and APIs, then loading into a
+                  <strong>HIVE</strong> data warehouse.
+                </li>
+                <li>Developed complex logic for structured text extraction from document files.</li>
+                <li>
+                  Collaborated closely with data analytics teams to ensure pipeline reliability and
+                  data quality.
+                </li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Apache Airflow</span>
+                <span class="tag">HIVE</span>
+                <span class="tag">Python</span>
+                <span class="tag">ETL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Softnix Software Dev -->
+          <div class="timeline-item" data-testid="experience-item-3">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Software Developer</h3>
+                  <p class="timeline-company">
+                    <i class="fas fa-building" aria-hidden="true"></i> Softnix Technology
+                  </p>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-date">
+                    <i class="far fa-calendar-alt" aria-hidden="true"></i> May 2023 – May 2024
+                  </span>
+                  <span class="timeline-location">
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i> Bangkok, Thailand
+                  </span>
+                </div>
+              </div>
+              <ul class="timeline-bullets">
+                <li>
+                  Designed plugins for the <strong>CKAN</strong> open-source data platform covering
+                  both frontend and backend development.
+                </li>
+                <li>
+                  Added <strong>Trino</strong> query engine to the platform, enabling users to import
+                  and query data directly from <strong>PostgreSQL</strong>, <strong>MySQL</strong>,
+                  and <strong>MongoDB</strong>.
+                </li>
+                <li>
+                  Integrated <strong>Apache Superset</strong>, enabling users to effortlessly analyze
+                  data through a wide variety of chart and graph types.
+                </li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">CKAN</span>
+                <span class="tag">Trino</span>
+                <span class="tag">Apache Superset</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">MongoDB</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ford Motor Company -->
+          <div class="timeline-item" data-testid="experience-item-4">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Mechanical Engineer Intern</h3>
+                  <p class="timeline-company">
+                    <i class="fas fa-building" aria-hidden="true"></i> Ford Motor Company
+                  </p>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-date">
+                    <i class="far fa-calendar-alt" aria-hidden="true"></i> Jun 2021 – Aug 2021
+                  </span>
+                  <span class="timeline-location">
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i> Rayong, Thailand
+                  </span>
+                </div>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Evaluated vehicle design and identified limitations of existing tooling.</li>
+                <li>
+                  Applied structural design, materials science, and <strong>CAD</strong> software to
+                  develop tool prototypes.
+                </li>
+                <li>
+                  Increased accuracy and convenience by integrating a <strong>microcontroller</strong>
+                  with measurement equipment.
+                </li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">CAD</span>
+                <span class="tag">Microcontrollers</span>
+                <span class="tag">Structural Design</span>
+                <span class="tag">Materials Science</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================
+         Skills
+         ============================ -->
+    <section id="skills" data-testid="skills-section">
+      <div class="container">
+        <h2 class="section-title" data-testid="skills-title">
+          Technical <span class="accent">Skills</span>
+        </h2>
+        <div class="skills-grid" data-testid="skills-grid">
+
+          <div class="skill-category" data-testid="skill-category-cloud">
+            <h3 class="skill-category-title">
+              <i class="fas fa-cloud" aria-hidden="true"></i> Cloud & Big Data
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Azure Data Factory</span>
+              <span class="skill-tag">Azure Synapse Analytics</span>
+              <span class="skill-tag">Azure Databricks</span>
+              <span class="skill-tag">Azure Data Lake Gen2</span>
+              <span class="skill-tag">Delta Lake</span>
+              <span class="skill-tag">Apache Airflow</span>
+              <span class="skill-tag">HIVE</span>
+              <span class="skill-tag">Parquet</span>
+            </div>
+          </div>
+
+          <div class="skill-category" data-testid="skill-category-databases">
+            <h3 class="skill-category-title">
+              <i class="fas fa-database" aria-hidden="true"></i> Databases
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Oracle</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">HIVE</span>
+            </div>
+          </div>
+
+          <div class="skill-category" data-testid="skill-category-languages">
+            <h3 class="skill-category-title">
+              <i class="fas fa-code" aria-hidden="true"></i> Languages
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">PL/SQL</span>
+            </div>
+          </div>
+
+          <div class="skill-category" data-testid="skill-category-tools">
+            <h3 class="skill-category-title">
+              <i class="fas fa-tools" aria-hidden="true"></i> Tools & Platforms
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Apache Superset</span>
+              <span class="skill-tag">Trino</span>
+              <span class="skill-tag">CKAN</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Git</span>
+            </div>
+          </div>
+
+          <div class="skill-category" data-testid="skill-category-engineering">
+            <h3 class="skill-category-title">
+              <i class="fas fa-cogs" aria-hidden="true"></i> Engineering
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">CAD Software</span>
+              <span class="skill-tag">Microcontrollers</span>
+              <span class="skill-tag">Arduino</span>
+              <span class="skill-tag">Raspberry Pi</span>
+              <span class="skill-tag">Structural Design</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================
+         Certifications
+         ============================ -->
+    <section id="certifications" data-testid="certifications-section">
+      <div class="container">
+        <h2 class="section-title" data-testid="certifications-title">
+          Certi<span class="accent">fications</span>
+        </h2>
+        <div class="certs-grid" data-testid="certs-grid">
+
+          <div class="cert-card" data-testid="cert-card-0">
+            <div class="cert-icon" aria-hidden="true">
+              <i class="fas fa-cloud"></i>
+            </div>
+            <div class="cert-info">
+              <h3 class="cert-name">AI on Cloud</h3>
+              <p class="cert-issuer">Cloud Certification</p>
+            </div>
+          </div>
+
+          <div class="cert-card" data-testid="cert-card-1">
+            <div class="cert-icon" aria-hidden="true">
+              <i class="fas fa-microchip"></i>
+            </div>
+            <div class="cert-info">
+              <h3 class="cert-name">Arduino Step by Step: Getting Started</h3>
+              <p class="cert-issuer">Udemy</p>
+            </div>
+          </div>
+
+          <div class="cert-card" data-testid="cert-card-2">
+            <div class="cert-icon" aria-hidden="true">
+              <i class="fas fa-server"></i>
+            </div>
+            <div class="cert-info">
+              <h3 class="cert-name">The Raspberry Pi Platform &amp; Python Programming</h3>
+              <p class="cert-issuer">Coursera</p>
+            </div>
+          </div>
+
+          <div class="cert-card" data-testid="cert-card-3">
+            <div class="cert-icon" aria-hidden="true">
+              <i class="fab fa-python"></i>
+            </div>
+            <div class="cert-info">
+              <h3 class="cert-name">100 Days of Code: Python Pro Bootcamp</h3>
+              <p class="cert-issuer">Udemy &middot; 2023</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================
+         Education
+         ============================ -->
+    <section id="education" data-testid="education-section">
+      <div class="container">
+        <h2 class="section-title" data-testid="education-title">
+          <span class="accent">Education</span>
+        </h2>
+        <div class="education-grid" data-testid="education-grid">
+
+          <div class="edu-card" data-testid="edu-card-0">
+            <div class="edu-icon" aria-hidden="true">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="edu-info">
+              <h3 class="edu-degree">Bachelor of Engineering — Mechanical Engineering</h3>
+              <p class="edu-school">Chulalongkorn University</p>
+              <p class="edu-year">
+                <i class="far fa-calendar-alt" aria-hidden="true"></i> 2018 – 2021
+              </p>
+            </div>
+          </div>
+
+          <div class="edu-card" data-testid="edu-card-1">
+            <div class="edu-icon" aria-hidden="true">
+              <i class="fas fa-school"></i>
+            </div>
+            <div class="edu-info">
+              <h3 class="edu-degree">High School</h3>
+              <p class="edu-school">Triam Udom Suksa School</p>
+              <p class="edu-year">
+                <i class="far fa-calendar-alt" aria-hidden="true"></i> Aug 2016 – May 2018
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================
+         Contact
+         ============================ -->
+    <section id="contact" data-testid="contact-section">
+      <div class="container">
+        <h2 class="section-title" data-testid="contact-title">
+          Get In <span class="accent">Touch</span>
+        </h2>
+        <p class="contact-subtitle" data-testid="contact-subtitle">
+          I'm currently open to new opportunities. Whether you have a project idea, a question, or
+          just want to say hi — feel free to reach out!
+        </p>
+        <div class="contact-links" data-testid="contact-links">
+          <a
+            href="mailto:poomrapee.s@outlook.co.th"
+            class="contact-link"
+            data-testid="contact-email"
+          >
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            <span>poomrapee.s@outlook.co.th</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/poomrapee-sareekachoncharu-198b03253/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-link"
+            data-testid="contact-linkedin"
+          >
+            <i class="fab fa-linkedin" aria-hidden="true"></i>
+            <span>linkedin.com/in/poomrapee-sareekachoncharu</span>
+          </a>
+          <a
+            href="https://github.com/PoomrapeeS"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-link"
+            data-testid="contact-github"
+          >
+            <i class="fab fa-github" aria-hidden="true"></i>
+            <span>github.com/PoomrapeeS</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================
+         Footer
+         ============================ -->
+    <footer data-testid="footer">
+      <div class="container">
+        <p>&copy; 2026 Poomrapee Sareekachoncharu. Built with passion and coffee.</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+name: portfolio
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # In CI/CD the built image is pushed to GHCR and pulled on the Droplet.
+    # Override this with: docker compose -p portfolio up -d
+    image: ghcr.io/poomrapees/web-portfolio:latest
+    container_name: portfolio
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
